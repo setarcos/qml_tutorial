@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     qmlRegisterType<MainController>("MC", 1, 0, "MainController");
+    qmlRegisterSingletonType(QUrl("qrc:/Style.qml"), "qml.style", 1, 0, "Style");
     MainController mainCon;
 
     engine.rootContext()->setContextProperty("mainCon", &mainCon);

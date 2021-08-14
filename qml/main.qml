@@ -8,7 +8,7 @@ Window {
     height: 768
     title: qsTr("Hello world")
 
-    Component.onCompleted: content.replace("qrc:dashboard.qml");
+    Component.onCompleted: content.replace("qrc:/dashboard.qml")
 
     StackView {
         id: content
@@ -18,6 +18,6 @@ Window {
             right: parent.right
             left: parent.left
         }
-        initialItem: "qrc:splash.qml"
+        initialItem: "qrc:/splash.qml"
     }
 }
