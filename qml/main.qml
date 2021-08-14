@@ -11,7 +11,7 @@ Window {
         id: message
         anchors.centerIn: parent
         font.pixelSize: 44
-        text: qsTr("Hello QML World!")
+        text: mainCon.ui_welcomeMsg
         color: "#008000"
     }
 }
