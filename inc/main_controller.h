@@ -8,4 +8,8 @@ class MainController: public QObject {
 public:
     explicit MainController(QObject * parent = nullptr);
     QString welcomeMsg = "Hello from Controller";
+
+signals:
+    void goDashboard();
+    void goWorkspace();
 };

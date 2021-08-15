@@ -10,14 +10,43 @@ Window {
 
     Component.onCompleted: content.replace("qrc:/dashboard.qml")
 
+    Connections {
+        target: mainCon
+        onGoDashboard: content.replace("qrc:/dashboard.qml")
+        onGoWorkspace: content.replace("qrc:/workspace.qml")
+    }
+
+    Rectangle{
+        id: navigation
+        anchors {
+            top: parent.top
+            bottom: parent.bottom
+            left: parent.left
+        }
+        width: 100
+        color: "#1F1F1F"
+
+        Column {
+            Button {
+                text: "Dashboard"
+                onClicked: mainCon.goDashboard()
+            }
+            Button {
+                text: "Workspace"
+                onClicked: mainCon.goWorkspace()
+            }
+        }
+    }
+
     StackView {
         id: content
         anchors {
             top: parent.top
             bottom: parent.bottom
             right: parent.right
-            left: parent.left
+            left: navigation.right
         }
         initialItem: "qrc:/splash.qml"
+        clip: true
     }
 }
