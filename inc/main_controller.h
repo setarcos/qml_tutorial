@@ -12,4 +12,5 @@ public:
 signals:
     void goDashboard();
     void goWorkspace();
+    void goExit();
 };

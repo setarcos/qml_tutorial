@@ -9,5 +9,6 @@
 
         <file alias="dashboard.png">res/dashboard.png</file>
         <file alias="workspace.png">res/workspace.png</file>
+        <file alias="exit.png">res/exit.png</file>
     </qresource>
 </RCC>

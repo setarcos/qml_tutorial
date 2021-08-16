@@ -39,6 +39,12 @@ Window {
                 imgSrc: "qrc:/workspace.png"
                 onClicked: mainCon.goWorkspace()
             }
+            MyButton {
+                id: btnExit
+                btnTxt: "Exit"
+                imgSrc: "qrc:/exit.png"
+                onClicked: mainCon.goExit()
+            }
         }
     }
 

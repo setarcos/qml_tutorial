@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     qmlRegisterSingletonType(QUrl("qrc:/Style.qml"), "qml.style", 1, 0, "Style");
     MainController mainCon;
 
+    QObject::connect(&mainCon, SIGNAL(goExit()), qApp, SLOT(quit()));
     engine.rootContext()->setContextProperty("mainCon", &mainCon);
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     return app.exec();
