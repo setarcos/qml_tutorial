@@ -27,12 +27,16 @@ Window {
         color: "#1F1F1F"
 
         Column {
-            Button {
-                text: "Dashboard"
+            MyButton {
+                id: btnDash
+                imgSrc: "qrc:/dashboard.png"
+                btnTxt: "Dashboard"
                 onClicked: mainCon.goDashboard()
             }
-            Button {
-                text: "Workspace"
+            MyButton {
+                id: btnWork
+                btnTxt: "Workspace"
+                imgSrc: "qrc:/workspace.png"
                 onClicked: mainCon.goWorkspace()
             }
         }

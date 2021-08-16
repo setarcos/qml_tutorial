@@ -5,5 +5,9 @@
         <file alias="splash.qml">qml/splash.qml</file>
         <file alias="workspace.qml">qml/workspace.qml</file>
         <file alias="Style.qml">qml/Style.qml</file>
+        <file alias="MyButton.qml">qml/MyButton.qml</file>
+
+        <file alias="dashboard.png">res/dashboard.png</file>
+        <file alias="workspace.png">res/workspace.png</file>
     </qresource>
 </RCC>
