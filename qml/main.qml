@@ -12,8 +12,12 @@ Window {
 
     Connections {
         target: mainCon
-        onGoDashboard: content.replace("qrc:/dashboard.qml")
-        onGoWorkspace: content.replace("qrc:/workspace.qml")
+        function onGoDashboard() {
+            content.replace("qrc:/dashboard.qml")
+        }
+        function onGoWorkspace() {
+            content.replace("qrc:/workspace.qml")
+        }
     }
 
     Rectangle{

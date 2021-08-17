@@ -9,7 +9,7 @@ Item {
             anchors.centerIn: parent
             font.pixelSize: Style.textSize
             color: "#008000"
-            text: mainCon.ui_welcomeMsg
+            text: mainCon ? mainCon.ui_welcomeMsg : "Bye"
         }
     }
 }
